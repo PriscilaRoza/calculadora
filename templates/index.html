@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Calculadora nova</title>
+</head>
+<body>
+    <div class="titulo">Calculadora de Danos das Meninas Super Poderosas</div>
+    <section>
+        
+        <div class="meninas">
+            <div class="titulo">Selecione uma personagem</div>
+            {% for menina in meninas %}
+
+            <div id="menina" class="menina" data-vida="{{menina.vida}}" >
+                <img src="{{menina.foto}}" width="200px" height="200px" alt="">
+            </div>
+
+            {% endfor %}
+
+        </div> 
+
+
+        <div class="viloes">
+            <div class="titulo">Selecione um personagem
+                <br> para lutar</div>
+        {% for vilao in viloes %}
+
+            <div id="vilao" class="vilao" data-dano="{{vilao.dano}}">
+                <img src="{{vilao.foto}}" width="200px" height="200px" alt="">
+            </div>
+
+            {% endfor %}
+        </div>
+
+    </section>
+
+    <div class="botao">
+        <a id="botao" onclick="calcularDano()">Calcular Dano</a>
+    </div>
+</div>
+
+
+
+
+
+<script type="text/javascript" src="../static/index.js"></script>
+</body>
+</html>

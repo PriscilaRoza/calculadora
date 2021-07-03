@@ -1,0 +1,74 @@
+body {
+    background: url('/static/img/cidade.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+  
+  }
+
+.coracao{
+    text-align: center;
+    padding-top:150px;
+    padding:50px;
+}
+.texto{
+    text-align: center;
+}
+.viloes{
+    margin-right: 25px;
+}
+.titulo{
+    margin-right: 55px;
+    text-align: center;
+   background: linear-gradient(to left,
+blue 30%,
+red 40%, red 10%,
+red 40%, red 20%,
+rgb(71, 107, 5) 100%
+    );
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+ 
+    font-size: 35px;
+    font-family: Arial;
+    
+}
+.viloes,
+.meninas{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.vilao,
+.menina{
+   
+    text-align: center;
+    padding-bottom: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.vilao:hover,
+.menina:hover{
+    -webkit-filter:grayscale(100%);
+}
+
+
+.vilao-selecionado,
+.menina-selecionada{
+    border: 10px solid red;
+
+}
+
+.botao{
+    background-color: red;
+    font-size:50px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 100px;
+    color: black;
+}
+.botao:hover{
+    color:white;
+}
+
